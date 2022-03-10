@@ -16,7 +16,9 @@ export default function ConnectButton({ handleOpenModal } : Props) {
     activateBrowserWallet();
   }
 
-  return account ? (
+  return (
+  
+  account ? (
     <Box
       display="flex"
       alignItems="center"
@@ -74,5 +76,6 @@ export default function ConnectButton({ handleOpenModal } : Props) {
     >
       Connect to a wallet
     </Button>
-  );
+    )
+  )
 }
